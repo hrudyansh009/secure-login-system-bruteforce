@@ -1,0 +1,23 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# FILE: requirements.txt
+# PURPOSE: Python package dependencies
+# DESCRIPTION: Lists all required Python packages with versions.
+#              Install all dependencies with: pip install -r requirements.txt
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Core Flask framework (includes werkzeug.security for password hashing)
+Flask==3.0.0
+
+# Werkzeug (included with Flask) - provides secure password hashing
+# Uses PBKDF2-SHA256 algorithm with salt
+Werkzeug==3.0.1
+
+# Database ORM (Object-Relational Mapping) - SQL injection protection
+Flask-SQLAlchemy==3.1.1
+
+# Form validation and CSRF protection
+Flask-WTF==1.2.1
+WTForms==3.1.1
+
+# Email validation
+email-validator==2.1.0
